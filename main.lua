@@ -22,9 +22,9 @@ function f:COMBAT_LOG_EVENT_UNFILTERED(...)
     local currentTime = time()
     if (lastCritTime + 1 <= currentTime) then
       if (1 == math.random(1,100)) then
-        PlaySoundFile("Interface\\AUDIO\\owen-wilson\\special.mp3","master")
+        PlaySoundFile("Interface\\AddOns\\WowICrit\\sounds\\special.mp3","master")
       else
-        PlaySoundFile("Interface\\AUDIO\\owen-wilson\\"..tostring(math.random(1,16))..".mp3","master")
+        PlaySoundFile("Interface\\AddOns\\WowICrit\\sounds\\"..tostring(math.random(1,16))..".mp3","master")
         return true
       end
       lastCritTime = currentTime
