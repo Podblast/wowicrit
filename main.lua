@@ -16,6 +16,8 @@ function f:COMBAT_LOG_EVENT_UNFILTERED(...)
     amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand = select(12, ...)
   elseif subevent == "SPELL_DAMAGE" then
     spellId, spellName, spellSchool, amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand = select(12, ...)
+  elseif subevent == "SPELL_HEAL" then
+    spellId, spellName, spellSchool, amount, overhealing, absorbed, critical = select(12, ...)
   end
 
   if critical and sourceGUID == playerGUID then
