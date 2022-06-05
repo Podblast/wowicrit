@@ -5,5 +5,5 @@
 
 main.lua
 
-#When loaded the addon will listen for spell crit events and play you one of many WOW sounds.
+#When loaded the addon will listen for attack/spell/heal crit events and play you one of many WOW sounds.
 #Bonus sound available in 1 out of 100 crits, inspired by Namana-Yojamba. (Gratsmate!).
