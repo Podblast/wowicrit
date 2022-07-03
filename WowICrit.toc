@@ -1,9 +1,10 @@
 ## Interface: 20502
 ## Title: WowICrit
 ## Author: Podblast
-## Version: 1.2
+## Version: 1.1.2
 
 main.lua
 
 #When loaded the addon will listen for attack/spell/heal crit events and play you one of many WOW sounds.
-#Bonus sound available in 1 out of 100 crits, inspired by Namana-Yojamba. (Gratsmate!).
+#Bonus sound available in 2 out of 100 crits, inspired by Namana-Yojamba. (Gratsmate!).
+#Bonus sound available in 10 out of 100 critical heals, inspired by Shaquiloheal. (Big one lined up!).
