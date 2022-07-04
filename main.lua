@@ -18,6 +18,10 @@ function f:COMBAT_LOG_EVENT_UNFILTERED(...)
     spellId, spellName, spellSchool, amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand = select(12, ...)
   elseif subevent == "SPELL_HEAL" then
     spellId, spellName, spellSchool, amount, overhealing, absorbed, critical = select(12, ...)
+  elseif subevent == "UNIT_DIED" then
+    if strfind(destGUID, "Player") and not UnitIsFeignDeath(destName) and UnitGroupRolesAssigned(destName) == "TANK" then
+      PlaySoundFile("Interface\\AddOns\\WowICrit\\sounds\\bigone.mp3","master")
+    end
   end
 
   if critical and sourceGUID == playerGUID then
